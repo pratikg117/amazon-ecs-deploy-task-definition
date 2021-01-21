@@ -224,7 +224,8 @@ async function run() {
     }
 
     const forceNewDeployInput = core.getInput('force-new-deployment', { required: false }) || false;
-    const forceNewDeployment = forceNewDeployInput != undefined && (forceNewDeployInput.toLowerCase === 'true' || forceNewDeployInput);
+    // const forceNewDeployment = forceNewDeployInput != undefined && (forceNewDeployInput.toLowerCase === 'true' || forceNewDeployInput);
+    const forceNewDeployment = true;
     
     // Register the task definition
     core.debug('Registering the task definition');
